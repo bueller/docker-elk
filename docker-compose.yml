@@ -36,6 +36,8 @@ services:
       - elasticsearch
 
   kibana:
+    labels:
+      shipyard.route: '/'
     build:
       context: kibana/
       args:
